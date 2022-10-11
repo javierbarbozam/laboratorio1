@@ -41,8 +41,38 @@ h1 {
 }
 
 main {
-  width: 100%;
+  width: 50%;
   padding-left: 5%;
+  margin: auto 0;
+}
+
+form {
+  width: 100%;
+  position: relative;
+}
+
+label {
+  display: block;
+  position: relative;
+}
+
+input,
+select {
+  color: #858585;
+  font-size: 18px;
+  border: solid 2px #858585;
+  border-radius: 8px;
+  height: 45px;
+  width: 100%;
+  padding-left: 15px;
+  margin: 5px 0 15px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+footer {
+  position: relative;
+  margin: auto 0;
 }
 
 .sidebar-menu button {
@@ -62,6 +92,10 @@ main {
 .sidebar-menu ul {
   padding: 120px 0 0 120px;
   text-align: left;
+}
+
+.form-flex div {
+  width: 47%;
 }
 
 .sidebar-menu ul li button:hover {
@@ -114,7 +148,8 @@ main {
   justify-content: space-between;
   align-items: center;
   padding-top: 3%;
-  width: 700px;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
 .main-profile-picture {
@@ -123,7 +158,48 @@ main {
   background-size: contain;
   height: 100px;
   width: 100px;
+}
 
+.form-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-btn {
+  justify-content: left;
+}
+
+#form-reset-btn {
+  width: 20%;
+  margin-right: 3%;
+  padding: 0;
+  background-color: transparent;
+  border: 2px solid #ff7008;
+  color: #ff7008;
+  box-sizing: border-box;
+}
+
+#form-reset-btn:hover {
+  background-color: #ff7008;
+  color: #fff;
+  cursor: pointer;
+}
+
+#form-submit-btn {
+  width: 20%;
+  padding: 0;
+  background-color: #ff7008;
+  color: #fff;
+  box-sizing: border-box;
+  border: none;
+}
+
+#form-submit-btn:hover {
+  background-color: transparent;
+  color: #ff7008;
+  border: 2px solid #ff7008;
+  cursor: pointer;
 }
 
 /* Sidebar vectors */
@@ -259,5 +335,55 @@ main {
   top: -3px;
   height: 35px;
   width: 35px;
+  content: "";
+}
+
+.footer-notifications-btn::before {
+  background-image: url(../images/icons/notifications-btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 65px;
+  top: -370px;
+  height: 35px;
+  width: 35px;
+  content: "";
+}
+
+.footer-profile-btn::before {
+  background-image: url(../images/images/user-profile-picture.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 110px;
+  top: -370px;
+  height: 35px;
+  width: 35px;
+  content: "";
+}
+
+.label-password::after {
+  background-image: url(../images/icons/form-check.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  left: 680px;
+  top: 41px;
+  height: 30px;
+  width: 30px;
+  content: "";
+}
+
+.label-email::after {
+  background-image: url(../images/icons/form-check.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  left: 680px;
+  top: 41px;
+  height: 30px;
+  width: 30px;
   content: "";
 }

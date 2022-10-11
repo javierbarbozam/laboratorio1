@@ -73,8 +73,8 @@
         <h1>Edit profile</h1>
         <div class="main-profile-picture"></div>
       </div>
-      <form action="">
-        <div>
+      <form method="post">
+        <div class="form-flex">
           <div>
             <label for="name">First Name</label>
             <input type="text" name="name" id="name" placeholder="Mehrab">
@@ -84,33 +84,43 @@
             <input type="text" name="name" id="last-name" placeholder="Bozogi">
           </div>
         </div>
-        <label for="email">E-mail</label>
+        <label class="label-email" for="email">E-mail</label>
         <input type="email" name="name" id="email" placeholder="Mehrabbozorgi.business@gmail.com">
         <label for="address">Address</label>
         <input type="text" name="address" id="address" placeholder="33062 Zboncak isle">
         <label for="contact">Contact</label>
         <input type="tel" name="contact" id="contact" placeholder="58077.79">
-        <div>
-          <label for="city">City</label>
-          <select name="city" id="city">
-            <option value="0">Mehrab</option>
-            <option value="1">Mehrab</option>
-            <option value="2">Mehrab</option>
-            <option value="3">Mehrab</option>
-          </select>
-          <label for="city">State</label>
-          <select name="city" id="city">
-            <option value="0">Bozorgi</option>
-            <option value="1">Bozorgi</option>
-            <option value="2">Bozorgi</option>
-            <option value="3">Bozorgi</option>
-          </select>
+        <div class="form-flex">
+          <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+              <option value="0">Mehrab</option>
+              <option value="1">Mehrab</option>
+              <option value="2">Mehrab</option>
+              <option value="3">Mehrab</option>
+            </select>
+          </div>
+          <div>
+            <label for="city">State</label>
+            <select name="city" id="city">
+              <option value="0">Bozorgi</option>
+              <option value="1">Bozorgi</option>
+              <option value="2">Bozorgi</option>
+              <option value="3">Bozorgi</option>
+            </select>
+          </div>
         </div>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <input type="reset" name="" id="" value="Cancel">
-        <input type="submit" name="" id="" value="Save">
+        <label class="label-password" for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password123">
+        <div class="form-flex form-btn">
+          <input type="reset" name="" id="form-reset-btn" value="Cancel">
+          <input type="submit" name="" id="form-submit-btn" value="Save">
+        </div>
       </form>
     </main>
+    <footer>
+      <button class="footer-profile-btn"><p class="visually-hidden">My Notifications</p></button>
+      <button class="footer-notifications-btn"><p class="visually-hidden">My profile</p></button>
+    </footer>
   </body>
 </html>
