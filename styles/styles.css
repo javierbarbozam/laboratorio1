@@ -1,17 +1,75 @@
-body {
-	margin: 0;
+html, body {
+  height: 100%;
 }
 
-
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+body {
+  margin: 0;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  color: #1c1c1c;
 }
 
 button {
-	background: none;
-	border: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 120px;
+  height: 100%;
+  background: #ffc297;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+main {
+  width: 100%;
+  padding-left: 5%;
+}
+
+.sidebar-menu button {
+  font-size: 28px;
+  color: #858585;
+  position: relative;
+}
+
+.sidebar-list li:nth-child(even) {
+  padding: 40% 0;
+}
+
+.sidebar-list li:last-child {
+  padding-top: 90%;
+}
+
+.sidebar-menu ul {
+  padding: 120px 0 0 120px;
+  text-align: left;
+}
+
+.sidebar-menu ul li button:hover {
+  color: #1c1c1c;
+}
+
+.sidebar-menu ul li:nth-child(even) {
+  margin: 60px 0;
 }
 
 .visually-hidden {
@@ -24,7 +82,182 @@ button {
   width: 1px;
 }
 
+.sidebar-list {
+ height: 90%;
+ margin: auto 0;
+}
+
+.first-section {
+  display: flex;
+}
+
 .sidebar-menu {
-	width: 120px;
-	background: #ffc297;
+  position: relative;
+  border-right: solid 1px #858585;
+  padding-right: 60px;
+}
+
+.sidebar-menu-title {
+  position: absolute;
+  font-size: 32px;
+  left: 90px;
+  top: 35px;
+}
+
+.second-section {
+  width: 100%;
+  padding-left: 5%;
+}
+
+.second-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3%;
+  width: 700px;
+}
+
+.main-profile-picture {
+  background-image: url(../images/images/user-profile-picture.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+
+}
+
+/* Sidebar vectors */
+
+/* sidebar list*/
+
+.sidebar-persian::after {
+  content: url(../images/icons/persian-logo.png);
+  position: relative;
+  height: 65px;
+  width: 65px;
+}
+
+.sidebar-home::after {
+  content: url(../images/icons/sidebar-homepage.png);
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-notifications::after {
+  content: url(../images/icons/sidebar-notifications.png);
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-calendar::after {
+  content: url(../images/icons/sidebar-calendar.png);
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-calendar::after {
+  content: url(../images/icons/sidebar-calendar.png);
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-stats::after {
+  content: url(../images/icons/sidebar-stats.png);
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-profile::after {
+  content: url(../images/icons/sidebar-profile.png);
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-settings::after {
+  background-image: url(../images/icons/sidebar-settings.png);
+  background-size: cover;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  content: "";
+}
+
+/* sidebar menu */
+
+.return-btn::after {
+  background-image: url(../images/icons/return-btn.png);
+  background-size: cover;
+  display: inline-block;
+  width: 15px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+.sidebar-menu-profile::before {
+  background-image: url(../images/icons/sidebar-menu-profile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -60px;
+  top: -3px;
+  height: 35px;
+  width: 35px;
+  content: "";
+}
+
+.sidebar-menu-notification::before {
+  background-image: url(../images/icons/sidebar-menu-notification.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -60px;
+  top: -3px;
+  height: 35px;
+  width: 35px;
+  content: "";
+}
+
+.sidebar-menu-security::before {
+  background-image: url(../images/icons/sidebar-menu-security.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -60px;
+  top: -3px;
+  height: 35px;
+  width: 35px;
+  content: "";
+}
+
+.sidebar-menu-appereance::before {
+  background-image: url(../images/icons/sidebar-menu-appereance.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -60px;
+  top: -3px;
+  height: 35px;
+  width: 35px;
+  content: "";
+}
+
+.sidebar-menu-help::before {
+  background-image: url(../images/icons/sidebar-menu-help.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -60px;
+  top: -3px;
+  height: 35px;
+  width: 35px;
+  content: "";
 }
