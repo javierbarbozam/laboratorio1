@@ -81,21 +81,9 @@ footer {
   position: relative;
 }
 
-.sidebar-list li:nth-child(even) {
-  padding: 40% 0;
-}
-
-.sidebar-list li:last-child {
-  padding-top: 90%;
-}
-
 .sidebar-menu ul {
   padding: 120px 0 0 120px;
   text-align: left;
-}
-
-.form-flex div {
-  width: 47%;
 }
 
 .sidebar-menu ul li button:hover {
@@ -104,6 +92,10 @@ footer {
 
 .sidebar-menu ul li:nth-child(even) {
   margin: 60px 0;
+}
+
+.form-flex div {
+  width: 47%;
 }
 
 .visually-hidden {
@@ -121,8 +113,17 @@ footer {
  margin: auto 0;
 }
 
+.sidebar-list li:nth-child(even) {
+  padding: 40% 0;
+}
+
+.sidebar-list li:last-child {
+  padding-top: 90%;
+}
+
 .first-section {
   display: flex;
+  margin: auto 0;
 }
 
 .sidebar-menu {
