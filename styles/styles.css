@@ -25,7 +25,6 @@ ul {
   list-style: none;
   text-align: center;
   padding: 0;
-  margin: 0;
 }
 
 nav {
@@ -109,16 +108,23 @@ footer {
 }
 
 .sidebar-list {
- height: 90%;
+ height: auto;
  margin: auto 0;
+ position: relative;
 }
 
-.sidebar-list li:nth-child(even) {
+.sidebar-list li {
   padding: 40% 0;
 }
 
 .sidebar-list li:last-child {
-  padding-top: 90%;
+  padding-top: 260%;
+  padding-bottom: 0;
+}
+
+.sidebar-list li:first-child {
+  padding-top: 0;
+  padding-bottom: 60%;
 }
 
 .first-section {
@@ -169,6 +175,7 @@ footer {
 
 .form-btn {
   justify-content: left;
+  margin-top: 20px;
 }
 
 #form-reset-btn {
@@ -369,7 +376,7 @@ footer {
   background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
-  left: 680px;
+  left: 96%;
   top: 41px;
   height: 30px;
   width: 30px;
@@ -382,7 +389,7 @@ footer {
   background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
-  left: 680px;
+  left: 96%;
   top: 41px;
   height: 30px;
   width: 30px;
